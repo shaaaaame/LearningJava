@@ -42,7 +42,7 @@ public class Main {
         }
 
         //runs the sort that is chosen by the user on the array testArray
-        runSort(chooseSort(), testArray);
+        testArray = runSort(chooseSort(), testArray);
 
         //prints the elements in order
         System.out.println();
@@ -72,6 +72,9 @@ public class Main {
                 break;
             case 1:
                 array = BubbleSort.bubbleSort(array);
+                break;
+            case 2:
+                array = InsertionSort.insertionSort(array);
                 break;
         }
 
